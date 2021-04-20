@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--
+  Customize this policy to fit your own app's needs. For more guidance, see:
+      https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+  Some notes:
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+      * Enable inline JS: add 'unsafe-inline' to default-src
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+
+  <meta name="theme-color" content="#007aff">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>nStore</title>
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" href="assets/icons/favicon.png">
+  <link rel="manifest" href="/manifest.json">
+  
+  <link rel="stylesheet" href="framework7/css/framework7.bundle.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="app">
+
+<!-- Your main view, should have "view-main" class -->
+    <div class="view view-main view-init safe-areas">
+      <div class="page" data-name="home">
+        <!-- Top Navbar -->
+        <div class="navbar navbar-large">
+          <div class="navbar-inner">
+            <div class="title-large">
+            </div>
+          </div>
+        </div>
+    
+<!-- Views/Tabs container -->
+    <div class="views tabs safe-areas">
+      <!-- Tabbar for switching views-tabs -->
+      <div class="toolbar toolbar-bottom tabbar-labels">
+        <div class="toolbar-inner">
+          <a href="/" class=" tab-link">
+            <i class="icon f7-icons if-not-md">today</i>
+            <span class="tabbar-label">Home</span>
+          </a>
+          <a href="/apps/" class="tab-link-active tab-link">
+            <i class="icon f7-icons if-not-md">rectangle_stacks_fill</i>
+            <span class="tabbar-label">All Apps</span>
+					</a>
+					<a href="/updates/" class=" tab-link">
+            <i class="icon f7-icons if-not-md">bell_fill<span class="badge color-red">7</span></i>
+            <span class="tabbar-label">Updates</span>
+          </a>
+						<a href="/credits/" class="tab-link">
+            <i class="icon f7-icons if-not-md">person_3_fill</i>
+            <span class="tabbar-label">Credits</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="block-title"><h1>Apps</h1></div>
+
+        <!-- Scrollable page content-->
+        
+          
+          <div class="list">
+            <ul>
+              <li>
+                <a href="/allapps/" class="item-content item-link">
+                  <div class="item-inner">
+                    <div class="item-title">All Apps</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/emulators/" class="item-content item-link">
+                  <div class="item-inner">
+                    <div class="item-title">Emulators</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/games/" class="item-content item-link">
+                  <div class="item-inner">
+                    <div class="item-title">Games</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/entertainment/" class="item-content item-link">
+                  <div class="item-inner">
+                    <div class="item-title">Entertainment</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+<br>
+			<!-- Apps Begin -->
+<div class="list accordion-list">
+	<div style="position: relative;"><br><img src="https://i.ibb.co/wCh97cP/F3-D44-BBF-9-AD4-4-ECE-BB21-F4-CD84-BE9-E5-B.jpg" class="appimg" alt="app" loading="lazy"><a href="itms-services://?action=download-manifest&amp;url=https://instahub.app/plists/unc0ver.plist" style="position:absolute;right:5px;top:22px;" class="link external col button button-fill">Install</a><span class="apptxt">Unc0ver V6.1.2</span><span class="appauthor">Pwn20wnd</span>
+<br>
+<div style="position: relative;"><br><img src="https://i.ibb.co/c8Wd5Ny/chimera.png" class="appimg" alt="app" loading="lazy"><a href="itms-services://?action=download-manifest&amp;url=https://app.app-valley.vip/plists/1589/install.plist" style="position:absolute;right:5px;top:22px;" class="link external col button button-fill">Install</a><span class="apptxt">Chimera iOS-12</span><span class="appauthor">Coolstar</span>
+ <br>
+</div>
+<div style="position: relative;"><br><img src="https://www.freepnglogos.com/uploads/spotify-logo-png/image-gallery-spotify-logo-21.png" class="appimg" alt="app" loading="lazy"><a href="itms-services://?action=download-manifest&amp;url=https://instahub.app/plists/spotify.plist" style="position:absolute;right:5px;top:22px;" class="link external col button button-fill">Install</a><span class="apptxt">Spotify++</span><span class="appauthor">Julioverne</span>
+<br>
+</div>
+<div style="position: relative;"><br><img src="https://img.appvalley.vip/appValley-pic/appImg_1562514808804cydia-1900000504-icon.png" class="appimg" alt="app" loading="lazy"><a href="itms-services://?action=download-manifest&url=https://cdn.appvalley.vip/appValley-ipa/1528.plist" style="position:absolute;right:5px;top:22px;" class="link external col button button-fill">Install</a><span class="apptxt">Textnow++</span><span class="appauthor">Tweaked Apps</span>
+<br>
+</div>
+<div style="position: relative;"><br><img src="https://i.ibb.co/mJg2kCy/E9-AD9-E6-C-3896-4-A19-B5-F5-32-B0803-D51-D3.png" class="appimg" alt="app" loading="lazy"><a href="itms-services://?action=download-manifest&amp;url=https://app.app-valley.vip/plists/95/install.plist" style="position:absolute;right:5px;top:22px;" class="link external col button button-fill">Install</a><span class="apptxt">LumaFusion</span><span class="appauthor">LumaTouch</span>
+<br>
+</div>
+
+
+  <!-- Framework7 library -->
+  <script src="framework7/js/framework7.bundle.min.js"></script>
+  
+  <!-- App routes -->
+  <script src="js/routes.js"></script>
+  <!-- App scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
